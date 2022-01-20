@@ -6,13 +6,15 @@ html {
 }
 
 :root {
-    --pink: #a70067;
-    --main-pink:rgb(241, 83, 176);
+    --pink: #4b0023;
+    --hot-pink: #F94892;
+    --light-pink: #FFA1C9;
+    --dark-pink: #E60965;
     --shadow-black-100: 0 .35rem 1rem rgba(0,0,0,0.2);
     --black-900: #000;
     --black-400: #646f87;
-    --black-100: #f7f7f7;
-    --cream: rgb(255, 245, 250);
+    --black-100: #E3E2DF;
+    --cream: #FBE5E5;
     --black-alpha-100: rgba(0,0,0,0.05);
 }
 /* Body */
@@ -21,9 +23,27 @@ body {
     font-size: 1rem;
     font-weight: normal;
     overflow-x: hidden;
-    background-color: var(--cream);
+    background-color: var(--black-100);
 }
 
+h1 {
+    color: var(--hot-pink)
+}
+
+hr {
+    margin: auto;
+    border-style: none none dotted;
+    opacity: .3;
+    border-color: var(--light-pink);
+    height: .125rem;
+    width: 5%;
+    border-bottom-width: .4rem;
+    padding: 1rem;
+}
+
+section {
+    padding: 1rem;
+}
 
 * {
     margin: 0;
@@ -31,13 +51,35 @@ body {
     box-sizing: border-box;
 }
 
+a {
+    color: var(--hot-pink);
+    border-style: none;
+    text-decoration: none;
+    transition: .25s;
+    
+}
+a:hover {
+    color: rgb(255, 151, 194);
+    transition: .25s;
+
+}
+a:active {
+    border-bottom-style: line;
+    border-bottom-width: .3rem;
+    border-color: var(--light-pink);
+}
+
 /* Navbar */
 .navbar {
-    background-color: var(--main-pink);
+    background-color: var(--pink);
     display: flex;
     height: 2rem;
     border: .015rem solid black;
-    justify-content: center;
+    justify-content: center;    
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
 }
 
 ul {
@@ -57,11 +99,14 @@ ul {
     margin-top: 0.20rem;
     text-align: center;
     border: hidden;
+    
 }
 
-.nav-item :hover {
-    transition: .25s;
-    color: rgb(110, 9, 25);
+.nav-item :active {
+    border-style: none none line;
+    color: var(--light-pink);
+    border-bottom-width: 0.3rem;
+    border-width: 1rem;
 }
 
 .theme-toggle {
@@ -77,10 +122,25 @@ ul {
     width: 1.75rem;
 }
 /* About */
+.resume-button {
+    margin-top: 1rem;
+    padding: .35rem;
+    background-color: var(--pink);
+}
 
+.about-paragraph {
+    width: 50%;
+}
 /* Skills */
 
 /* Portfolio */
+.portfolio-color {
+    text-decoration: none;
+    border-radius: 1rem;
+    border-style: line;
+    box-sizing: content-box;
+
+}
 
 /* Contact Me */
 
