@@ -10,24 +10,26 @@ html {
     --hot-pink: #F94892;
     --light-pink: #FFA1C9;
     --dark-pink: #E60965;
+    --black-pink: #770038;
+    --cream: #FBE5E5;
     --shadow-black-100: 0 .35rem 1rem rgba(0,0,0,0.2);
     --black-900: #000;
-    --black-400: #646f87;
-    --black-100: #E3E2DF;
-    --cream: #FBE5E5;
+    --black-400: #876478;
+    --black-100: #ffb7d6;
     --black-alpha-100: rgba(0,0,0,0.05);
 }
 /* Body */
+
 body {
     font-family: "Poppins", sans-serif;
     font-size: 1rem;
     font-weight: normal;
     overflow-x: hidden;
-    background-color: var(--black-100);
+    background-color: var(--cream);
 }
 
 h1 {
-    color: var(--hot-pink)
+    color: var(--dark-pink)
 }
 
 hr {
@@ -38,10 +40,6 @@ hr {
     height: .125rem;
     width: 5%;
     border-bottom-width: .4rem;
-    padding: 1rem;
-}
-
-section {
     padding: 1rem;
 }
 
@@ -70,6 +68,7 @@ a:active {
 }
 
 /* Navbar */
+
 .navbar {
     background-color: var(--pink);
     display: flex;
@@ -109,6 +108,8 @@ ul {
     border-width: 1rem;
 }
 
+/* Theme Toggle */
+
 .theme-toggle {
  
     height: 2rem;
@@ -121,7 +122,25 @@ ul {
     height: 1.75rem;
     width: 1.75rem;
 }
+
+/* Home */
+
+.home-group {
+    text-align: center;
+    color: var(--dark-pink);
+    background-color: var(--black-100);
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.home-section {
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
 /* About */
+
 .resume-button {
     margin-top: 1rem;
     padding: .35rem;
@@ -131,15 +150,20 @@ ul {
 .about-paragraph {
     width: 50%;
 }
+
 /* Skills */
 
 /* Portfolio */
+
 .portfolio-color {
     text-decoration: none;
     border-radius: 1rem;
     border-style: line;
     box-sizing: content-box;
+}
 
+.portfolio-link {
+    color: var(--black-pink);
 }
 
 /* Contact Me */
@@ -186,8 +210,6 @@ ul {
     font-size: 1rem;
     text-transform: wrap;
 }
-
-
 
 .submit-button {
     padding: .25rem;
